@@ -34,7 +34,7 @@ class ObjectMapper(object):
             try:
                 result.append(self.bind(xml_file_path=xml_file_path))
             except Exception as e:
-                logging.error("%s", e.args)
+                logging.error("%s path %s", e.args, xml_file_path)
         return result
 
 
